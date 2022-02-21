@@ -17,8 +17,7 @@
 :focus {
   transition-property: fill, background-color, color, box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  transition: background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -414,6 +413,9 @@ img {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+
+  width: 170px;
+  height: 92px;
 }
 
 /* button */
@@ -655,18 +657,23 @@ img {
   min-height: 581px;
 
   background-color: var(--white-text-color);
+  border-radius: 4px;
 }
 
 .icon-close {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 8px;
+  right: 8px;
 
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--white-text-color);
+  border-radius: 50%;
 }
 
 /* #FFFFFF  -  колір білого тексту
